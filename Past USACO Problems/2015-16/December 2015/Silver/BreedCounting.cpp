@@ -1,4 +1,3 @@
-#include <iostream>
-#include <cstudio>
+int main() {
 
-using namespace std;
+}
