@@ -16,7 +16,7 @@ int main () {
     int strokes[N][2][2];
 
     
-    int size = 1001;
+    int size = 200;
     int barn[size + 1][size + 1];
     for (int i = 0; i <= size; i++) {
         for (int j = 0; j <= size; j++) {
@@ -42,8 +42,24 @@ int main () {
                 count ++;
             }
         }
-    } 
+    }
 
     cout << count;
 
+    int afterLayer[size + 1][size + 1];
+    for (int i = 0; i <= size; i++) {
+        for (int j = 0; j <= size; j++) {
+            if (barn[i][j] == K - 1) {
+                afterLayer[i][j] = 1;
+            }
+            else if (barn[i][j] == K) {
+                afterLayer[i][j] = -1;
+            }
+            else {
+                afterLayer[i][j] = 0;
+            }
+        }
+    }
+    
+    
 }
