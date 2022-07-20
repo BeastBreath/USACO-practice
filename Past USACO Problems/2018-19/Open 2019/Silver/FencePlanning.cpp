@@ -19,7 +19,6 @@ int main() {
     freopen("fenceplan.in", "r", stdin);
     freopen("fenceplan.out", "w", stdout);
 
-    int N, K;
     cin >> N >> K;
     for (int i = 0; i < N; i++) {
         visited[i] = false;
